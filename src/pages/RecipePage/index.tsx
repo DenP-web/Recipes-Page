@@ -15,7 +15,7 @@ const RecipePage = () => {
   const { data, isLoading } = useQuery({
     queryKey: ["resipe"],
     queryFn: () => fetchMealById(id),
-    staleTime: Infinity,
+    staleTime: 0,
   });
 
   const meal = data as Recipe;
