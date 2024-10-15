@@ -1,0 +1,26 @@
+.recipe {
+  padding-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 100%;
+
+  }
+}

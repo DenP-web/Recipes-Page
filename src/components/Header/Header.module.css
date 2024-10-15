@@ -1,0 +1,32 @@
+.header {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--c-light-cream);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--c-medium-gray);
+  font-weight: bold;
+  transition: color .3s linear, border-color .3s linear;
+  border-bottom: 1px solid transparent;
+}
+
+.navLink:hover {
+  color: var(--c-muted-blue);
+  border-bottom: 1px solid var(--c-muted-blue);
+}

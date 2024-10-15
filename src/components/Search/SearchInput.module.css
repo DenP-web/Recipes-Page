@@ -1,0 +1,84 @@
+.searchBox {
+  position: relative;
+  margin-bottom: 16px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--c-dark-gray);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--c-medium-gray);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: var(--c-muted-blue);
+}
+
+.clear {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 6px;
+  color: var(--c-dark-gray);
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+
+  transition: color 0.2s, opacity .3s linear;
+  opacity: 0;
+}
+
+.clear:hover {
+  color: var(--c-warm-red);
+}
+
+.clear.active {
+  opacity: 1;
+}
+
+.popup {
+  border: 1px solid var(--c-dark-gray);
+  z-index: 9999;
+  width: 100%;
+  max-height: 500px;
+  overflow-y: auto;
+  position: absolute;
+  background-color: var(--c-light-cream);
+  padding: 10px;
+  border-radius: 10px;
+  transform: translateX(200%);
+  transition: transform .3s linear;
+}
+
+.popup.active {
+  transform: translateX(0);
+}
+
+.notFound {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .searchBox {
+   max-width: 100%;
+  }
+}

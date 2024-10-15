@@ -1,0 +1,10 @@
+:root {
+  --c-white: #ffffff;
+  --c-dark-gray: #333333; /* Темний сірий */
+  --c-warm-red: #e63946; /* Теплий червоний */
+  --c-muted-blue: #457b9d; /* Приглушений синій */
+  --c-light-cream: #faf3e0; /* Світлий кремовий */
+  --c-light-gray: #ccc; /* Світлий сірий */
+  --c-soft-gray-blue: #a8dadc; /* М'який сіро-блакитний */
+  --c-medium-gray: #6c757d; /* Середній сірий */
+}
